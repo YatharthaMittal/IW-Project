@@ -1,0 +1,9 @@
+@media only screen and (max-width: 1537px) {
+    .main_title{font-size: 50px;}
+    .form_wrapper{margin-left: 160px;}
+    .erp_item{font-size: 14px;}
+    /* .card_wrapper{grid-template-columns: repeat(4, 1fr);} */
+  }
+  @media only screen and (max-width: 1337px) {
+    .main_title{font-size: 42px; color: red;}
+  }
