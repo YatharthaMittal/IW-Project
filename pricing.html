@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Huly Pricing Plans</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    screens: {
+                        'xs': '375px',
+                        'sm': '640px',
+                        'md': '768px',
+                        'lg': '1024px',
+                    },
+                    fontSize: {
+                        '16': '16px',
+                        '18': '18px',
+                        '20': '20px',
+                        '36': '36px',
+                        '48': '48px',
+                        '56': '56px',
+                        '64': '64px',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            background-color: #0b0c0e;
+            font-family: 'Inter', sans-serif;
+        }
+
+        .tracking-snugger {
+            letter-spacing: -0.01em;
+        }
+
+        .tracking-tight {
+            letter-spacing: -0.02em;
+        }
+
+        .text-grey-80 {
+            color: rgba(255, 255, 255, 0.8);
+        }
+
+        .no-scrollbars {
+            -ms-overflow-style: none;
+            /* IE and Edge */
+            scrollbar-width: none;
+            /* Firefox */
+        }
+
+        .no-scrollbars::-webkit-scrollbar {
+            display: none;
+            /* Chrome, Safari, Opera */
+        }
+
+        /* Glow effect for active plan */
+        /* .item.active {
+            box-shadow: 0 0 15px rgba(0, 255, 255, 0.7),
+                       0 0 30px rgba(0, 255, 255, 0.5),
+                       inset 0 0 10px rgba(0, 255, 255, 0.3);
+            transition: box-shadow 0.3s ease;
+        } */
+
+        /* Opacity transition for video container */
+        .item .transition-opacity {
+            opacity: 0;
+        }
+
+        .item.active .transition-opacity {
+            opacity: 1;
+        }
+
+        .item .transition-opacity {
+            transition: opacity 0.3s ease;
+        }
+    </style>
+</head>
+
+<body class="min-h-screen p-4">
+    <div
+        class="safe-paddings relative left-1/2 z-10 -my-52 -ml-[50vw] w-screen [mask-image:linear-gradient(270deg,rgba(115,115,115,0.00)_9.82%,#D9D9D9_30.43%,#D9D9D9_78.87%,rgba(217,217,217,0.00)_99.54%)] sm:[mask-image:none]">
+        <div class="container-ultra-narrow relative">
+            <h2 class="sr-only">Huly pricing plans</h2>
+            <div class="relative xs:px-5">
+                <div
+                    class="no-scrollbars -mx-[calc((100vw-100%)/2)] flex snap-x snap-mandatory overflow-x-auto px-[calc((100vw-100%)/2)] py-[320px] xs:px-[calc((100vw-122%)/2)]">
+                    <div class="flex w-[3000px] flex-shrink-0 ">
+                        <div
+                            class="item relative mr-14 flex aspect-[0.7372] w-[390px] flex-shrink-0 cursor-pointer snap-center flex-col rounded-[24px] border border-[rgba(255,255,255,0.05)] p-[28px] pb-[25px] text-white transition-all duration-200 lg:mr-12 md:w-[366px] sm:mr-5 sm:w-[91%] sm:max-w-[366px] sm:p-[18px] xs:w-[288px]"
+                            onclick="toggleActive(this)">
+                            <h3 class="text-20 font-semibold leading-snug tracking-tight sm:text-16">Common</h3>
+                            <p class="mt-2.5 leading-snug">
+                                <span
+                                    class="text-64 font-semibold tracking-tight lg:text-56 md:text-48 sm:text-36">$<!-- -->0</span>
+                                <span
+                                    class="ml-1 text-20 font-medium tracking-tight text-grey-80 sm:text-16">/monthly</span>
+                            </p>
+                            <p class="mt-1 pr-3 text-18 leading-snug -tracking-[0.03em] md:mt-0 sm:pr-0 sm:text-16">For
+                                individuals and teams getting started with Huly.</p>
+                            <span class="mt-[18px] block h-px bg-[rgba(255,255,255,0.10)] sm:mt-4"
+                                aria-hidden="true"></span>
+                            <ul class="mt-6 flex flex-col gap-y-4 lg:mt-8 md:mt-7 sm:mt-4 sm:gap-y-3">
+                                <li
+                                    class="flex items-center gap-x-2 text-18 leading-none tracking-snugger text-white/90 sm:gap-x-1.5 sm:whitespace-nowrap sm:text-16 sm:tracking-tight">
+                                    <img alt="" loading="lazy" width="16" height="16" decoding="async" data-nimg="1"
+                                        class="" style="color:transparent"
+                                        src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGZpbGw9Im5vbmUiIHZpZXdCb3g9IjAgMCAxNiAxNiI+PHBhdGggc3Ryb2tlPSIjZmZmIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIHN0cm9rZS13aWR0aD0iMS44MjkiIGQ9Im0xMy4zMyA0LTcuMzMzIDcuMzMzTDIuNjY0IDgiLz48L3N2Zz4=">
+                                    Unlimited users
+                                </li>
+                                <li
+                                    class="flex items-center gap-x-2 text-18 leading-none tracking-snugger text-white/90 sm:gap-x-1.5 sm:whitespace-nowrap sm:text-16 sm:tracking-tight">
+                                    <img alt="" loading="lazy" width="16" height="16" decoding="async" data-nimg="1"
+                                        class="" style="color:transparent"
+                                        src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGZpbGw9Im5vbmUiIHZpZXdCb3g9IjAgMCAxNiAxNiI+PHBhdGggc3Ryb2tlPSIjZmZmIiBzdHJoi2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIiBzdHJoi2tlLXdpZHRoPSIxLjgyOSIgZD0ibTEzLjMzIDQtNy4zMzMgNy4zMzNMMi6NjY0IDgiLzwvc3ZnPg==">
+                                    Unlimited Huly Objects
+                                </li>
+                                <li
+                                    class="flex items-center gap-x-2 text-18 leading-none tracking-snugger text-white/90 sm:gap-x-1.5 sm:whitespace-nowrap sm:text-16 sm:tracking-tight">
+                                    <img alt="" loading="lazy" width="16" height="16" decoding="async" data-nimg="1"
+                                        class="" style="color:transparent"
+                                        src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGZpbGw9Im5vbmUiIHZpZXdCb3g9IjAgMCAxNiAxNiI+PHBhdGggc3Ryb2tlPSIjZmZmIiBzdHJoi2tlLWxpbmVjYXA9InJvdW5kIiBzdHJoi2tlLWxpbmVqb2luPSJyZWFyb2VuZCIgc3Ryb2tlLXdpZHRoPSIxLjgyOSIgZD0ibTEzLjMzIDQtNy4zMzMgNy4zMzNMMi6NjY0IDgiLzwvc3ZnPg==">
+                                    10GB Storage per Workspace
+                                    <span class="ml-1 whitespace-nowrap">
+                                        <span class="group relative top-0.5 inline-block"
+                                            data-tooltip-id="10GB Storage per Workspace_tooltip_0" aria-hidden="true">
+                                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 16 16"
+                                                class="text-grey-80 transition-opacity duration-200 group-hover:text-white"
+                                                width="16" height="16" aria-hidden="true">
+                                                <path fill="currentColor"
+                                                    d="M8.002 16.004A8.002 8.002 0 1 0 8.002 0a8.002 8.002 0 0 0 0 16.004"
+                                                    opacity="0.11"></path>
+                                                <path fill="#C9CBCF"
+                                                    d="M8.004 4.92c.576 0 .82-.308.82-.73v-.218c0-.423-.244-.73-.82-.73s-.832.307-.832.73v.218c0 .422.256.73.832.73M7.3 12.767h1.395V6.11H7.3v6.658Z">
+                                                </path>
+                                            </svg>
+                                        </span>
+                                    </span>
+                                </li>
+                                <li
+                                    class="flex items-center gap-x-2 text-18 leading-none tracking-snugger text-white/90 sm:gap-x-1.5 sm:whitespace-nowrap sm:text-16 sm:tracking-tight">
+                                    <img alt="" loading="lazy" width="16" height="16" decoding="async" data-nimg="1"
+                                        class="" style="color:transparent"
+                                        src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGZpbGw9Im5vbmUiIHZpZXdCb3g9IjAgMCAxNiAxNiI+PHBhdGggc3Ryb2tlPSIjZmZmIiBzdHJoi2tlLWxpbmVjYXA9InJvdW5kIiBzdHJoi2tlLWxpbmVqb2luPSJyZWFyb2VuZCIgc3Ryb2tlLXdpZHRoPSIxLjgyOSIgZD0ibTEzLjMzIDQtNy4zMzMgNy4zMzNMMi6NjY0IDgiLzwvc3ZnPg==">
+                                    10GB Video/Audio Traffic
+                                    <span class="ml-1 whitespace-nowrap">
+                                        <span class="group relative top-0.5 inline-block"
+                                            data-tooltip-id="10GB Video/Audio Traffic_tooltip_0" aria-hidden="true">
+                                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 16 16"
+                                                class="text-grey-80 transition-opacity duration-200 group-hover:text-white"
+                                                width="16" height="16" aria-hidden="true">
+                                                <path fill="currentColor"
+                                                    d="M8.002 16.004A8.002 8.002 0 1 0 8.002 0a8.002 8.002 0 0 0 0 16.004"
+                                                    opacity="0.11"></path>
+                                                <path fill="#C9CBCF"
+                                                    d="M8.004 4.92c.576 0 .82-.308.82-.73v-.218c0-.423-.244-.73-.82-.73s-.832.307-.832.73v.218c0 .422.256.73.832.73M7.3 12.767h1.395V6.11H7.3v6.658Z">
+                                                </path>
+                                            </svg>
+                                        </span>
+                                    </span>
+                                </li>
+                                <li
+                                    class="flex items-center gap-x-2 text-18 leading-none tracking-snugger text-white/90 sm:gap-x-1.5 sm:whitespace-nowrap sm:text-16 sm:tracking-tight">
+                                    <img alt="" loading="lazy" width="16" height="16" decoding="async" data-nimg="1"
+                                        class="" style="color:transparent"
+                                        src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGZpbGw9Im5vbmUiIHZpZXdCb3g9IjAgMCAxNiAxNiI+PHBhdGggc3Ryb2tlPSIjZmZmIiBzdHJoi2tlLWxpbmVjYXA9InJvdW5kIiBzdHJoi2tlLWxpbmVqb2luPSJyZWFyb2VuZCIgc3Ryb2tlLXdpZHRoPSIxLjgyOSIgZD0ibTEzLjMzIDQtNy4zMzMgNy4zMzNMMi6NjY0IDgiLzwvc3ZnPg==">
+                                    AI — TBD
+                                </li>
+                            </ul>
+                            <a class="transition-colors duration-200 transition-all duration-200 uppercase font-bold flex items-center justify-center h-14 w-full text-18 text-white tracking-snugger rounded-full border border-white/20 transition-all duration-200 hover:border-white/50 mt-auto font-semibold capitalize transition-all duration-500 hover:bg-opacity-85 sm:!h-10 sm:!text-16 bg-white !text-black"
+                                href="/login">Start Free</a>
+                            <div class="pointer-events-none select-none rounded-[inherit]">
+                                <div class="absolute -left-[70%] -top-[300px] -z-20 aspect-[0.925925] w-[1000px] rounded-[inherit] md:-top-[282px] md:w-[932px] sm:-left-[68.666%] sm:-top-[56%] sm:w-[255%] transition-opacity duration-300" data-video-container>
+                                    <div class="absolute -inset-0">
+                                        <video class="absolute inset-0" width="1000" height="1080" autoplay="" loop="" playsinline="" style="opacity: 1;">
+                                            <source src="pricing_card_video.mp4" type="video/mp4">
+                                            <source src="/videos/pages/pricing/plans/common.webm" type="video/webm">
+                                        </video>
+                                    </div>
+                                    <img alt="" loading="lazy" width="500" height="540" decoding="async" data-nimg="1" class="absolute left-0 top-0 z-10 aspect-[0.925925] w-[1000px] max-w-none rounded-[inherit] md:w-[932px] xs:w-[692px]" style="color:transparent" srcset="/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fvideo-fade.8c7d3d5c.png&w=640&q=100 1x, /_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fvideo-fade.8c7d3d5c.png&w=1080&q=100 2x" src="/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fvideo-fade.8c7d3d5c.png&w=1080&q=100">
+                                </div>
+                            </div>
+                            <div class="pointer-events-none absolute -inset-px -z-10 select-none rounded-[inherit] opacity-0 [backdrop-filter:blur(1px)] sm:rounded-[18px]" style="opacity: 1;">
+                                <img alt="" loading="lazy" width="391" height="530" decoding="async" data-nimg="1" style="color:transparent" src="pricing_card_img.svg">
+                            </div>
+                        </div>
+                        <div
+                            class="item relative mr-14 flex aspect-[0.7372] w-[390px] flex-shrink-0 cursor-pointer snap-center flex-col rounded-[24px] border border-[rgba(255,255,255,0.05)] p-[28px] pb-[25px] text-white transition-all duration-200 lg:mr-12 md:w-[366px] sm:mr-5 sm:w-[91%] sm:max-w-[366px] sm:p-[18px] xs:w-[288px] bg-[rgb(13_15_17/40%)] shadow-[4px_6px_25px_rgba(0,0,0,0.56)]"
+                            onclick="toggleActive(this)">
+                            <h3 class="text-20 font-semibold leading-snug tracking-tight sm:text-16">Rare</h3>
+                            <p class="mt-2.5 leading-snug">
+                                <span
+                                    class="text-64 font-semibold tracking-tight lg:text-56 md:text-48 sm:text-36">$<!-- -->19</span>
+                                <span
+                                    class="ml-1 text-20 font-medium tracking-tight text-grey-80 sm:text-16">.<!-- -->99</span>
+                                <span
+                                    class="ml-1 text-20 font-medium tracking-tight text-grey-80 sm:text-16">/monthly</span>
+                            </p>
+                            <p class="mt-1 pr-3 text-18 leading-snug -tracking-[0.03em] md:mt-0 sm:pr-0 sm:text-16">For
+                                individual creatives, freelancers, and micro-agencies.</p>
+                            <span class="mt-[18px] block h-px bg-[rgba(255,255,255,0.10)] sm:mt-4"
+                                aria-hidden="true"></span>
+                            <ul class="mt-6 flex flex-col gap-y-4 lg:mt-8 md:mt-7 sm:mt-4 sm:gap-y-3">
+                                <li
+                                    class="flex items-center gap-x-2 text-18 leading-none tracking-snugger text-white/90 sm:gap-x-1.5 sm:whitespace-nowrap sm:text-16 sm:tracking-tight">
+                                    <img alt="" loading="lazy" width="16" height="16" decoding="async" data-nimg="1"
+                                        class="" style="color:transparent"
+                                        src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGZpbGw9Im5vbmUiIHZpZXdCb3g9IjAgMCAxNiAxNiI+PHBhdGggc3Ryb2tlPSIjZmZmIiBzdHJoi2tlLWxpbmVjYXA9InJvdW5kIiBzdHJoi2tlLWxpbmVqb2luPSJyZWFyb2VuZCIgc3Ryb2tlLXdpZHRoPSIxLjgyOSIgZD0ibTEzLjMzIDQtNy4zMzMgNy4zMzNMMi6NjY0IDgiLzwvc3ZnPg==">
+                                    Unlimited users
+                                </li>
+                                <li
+                                    class="flex items-center gap-x-2 text-18 leading-none tracking-snugger text-white/90 sm:gap-x-1.5 sm:whitespace-nowrap sm:text-16 sm:tracking-tight">
+                                    <img alt="" loading="lazy" width="16" height="16" decoding="async" data-nimg="1"
+                                        class="" style="color:transparent"
+                                        src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGZpbGw9Im5vbmUiIHZpZXdCb3g9IjAgMCAxNiAxNiI+PHBhdGggc3Ryb2tlPSIjZmZmIiBzdHJoi2tlLWxpbmVjYXA9InJvdW5kIiBzdHJoi2tlLWxpbmVqb2luPSJyZWFyb2VuZCIgc3Ryb2tlLXdpZHRoPSIxLjgyOSIgZD0ibTEzLjMzIDQtNy4zMzMgNy4zMzNMMi6NjY0IDgiLzwvc3ZnPg==">
+                                    Unlimited Huly Objects
+                                </li>
+                                <li
+                                    class="flex items-center gap-x-2 text-18 leading-none tracking-snugger text-white/90 sm:gap-x-1.5 sm:whitespace-nowrap sm:text-16 sm:tracking-tight">
+                                    <img alt="" loading="lazy" width="16" height="16" decoding="async" data-nimg="1"
+                                        class="" style="color:transparent"
+                                        src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGZpbGw9Im5vbmUiIHZpZXdCb3g9IjAgMCAxNiAxNiI+PHBhdGggc3Ryb2tlPSIjZmZmIiBzdHJoi2tlLWxpbmVjYXA9InJvdW5kIiBzdHJoi2tlLWxpbmVqb2luPSJyZWFyb2VuZCIgc3Ryb2tlLXdpZHRoPSIxLjgyOSIgZD0ibTEzLjMzIDQtNy4zMzMgNy4zMzNMMi6NjY0IDgiLzwvc3ZnPg==">
+                                    100GB Storage
+                                    <span class="ml-1 whitespace-nowrap">
+                                        <span class="group relative top-0.5 inline-block"
+                                            data-tooltip-id="100GB Storage_tooltip_1" aria-hidden="true">
+                                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 16 16"
+                                                class="text-grey-80 transition-opacity duration-200 group-hover:text-white"
+                                                width="16" height="16" aria-hidden="true">
+                                                <path fill="currentColor"
+                                                    d="M8.002 16.004A8.002 8.002 0 1 0 8.002 0a8.002 8.002 0 0 0 0 16.004"
+                                                    opacity="0.11"></path>
+                                                <path fill="#C9CBCF"
+                                                    d="M8.004 4.92c.576 0 .82-.308.82-.73v-.218c0-.423-.244-.73-.82-.73s-.832.307-.832.73v.218c0 .422.256.73.832.73M7.3 12.767h1.395V6.11H7.3v6.658Z">
+                                                </path>
+                                            </svg>
+                                        </span>
+                                    </span>
+                                </li>
+                                <li
+                                    class="flex items-center gap-x-2 text-18 leading-none tracking-snugger text-white/90 sm:gap-x-1.5 sm:whitespace-nowrap sm:text-16 sm:tracking-tight">
+                                    <img alt="" loading="lazy" width="16" height="16" decoding="async" data-nimg="1"
+                                        class="" style="color:transparent"
+                                        src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGZpbGw9Im5vbmUiIHZpZXdCb3g9IjAgMCAxNiAxNiI+PHBhdGggc3Ryb2tlPSIjZmZmIiBzdHJoi2tlLWxpbmVjYXA9InJvdW5kIiBzdHJoi2tlLWxpbmVqb2luPSJyZWFyb2VuZCIgc3Ryb2tlLXdpZHRoPSIxLjgyOSIgZD0ibTEzLjMzIDQtNy4zMzMgNy4zMzNMMi6NjY0IDgiLzwvc3ZnPg==">
+                                    100GB Video / Audio Traffic
+                                    <span class="ml-1 whitespace-nowrap">
+                                        <span class="group relative top-0.5 inline-block"
+                                            data-tooltip-id="100GB Video / Audio Traffic_tooltip_1" aria-hidden="true">
+                                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 16 16"
+                                                class="text-grey-80 transition-opacity duration-200 group-hover:text-white"
+                                                width="16" height="16" aria-hidden="true">
+                                                <path fill="currentColor"
+                                                    d="M8.002 16.004A8.002 8.002 0 1 0 8.002 0a8.002 8.002 0 0 0 0 16.004"
+                                                    opacity="0.11"></path>
+                                                <path fill="#C9CBCF"
+                                                    d="M8.004 4.92c.576 0 .82-.308.82-.73v-.218c0-.423-.244-.73-.82-.73s-.832.307-.832.73v.218c0 .422.256.73.832.73M7.3 12.767h1.395V6.11H7.3v6.658Z">
+                                                </path>
+                                            </svg>
+                                        </span>
+                                    </span>
+                                </li>
+                                <li
+                                    class="flex items-center gap-x-2 text-18 leading-none tracking-snugger text-white/90 sm:gap-x-1.5 sm:whitespace-nowrap sm:text-16 sm:tracking-tight">
+                                    <img alt="" loading="lazy" width="16" height="16" decoding="async" data-nimg="1"
+                                        class="" style="color:transparent"
+                                        src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGZpbGw9Im5vbmUiIHZpZXdCb3g9IjAgMCAxNiAxNiI+PHBhdGggc3Ryb2tlPSIjZmZmIiBzdHJoi2tlLWxpbmVjYXA9InJvdW5kIiBzdHJoi2tlLWxpbmVqb2luPSJyZWFyb2VuZCIgc3Ryb2tlLXdpZHRoPSIxLjgyOSIgZD0ibTEzLjMzIDQtNy4zMzMgNy4zMzNMMi6NjY0IDgiLzwvc3ZnPg==">
+                                    AI — TBD
+                                </li>
+                            </ul>
+                            <a class="transition-colors duration-200 transition-all duration-200 uppercase font-bold flex items-center justify-center h-14 w-full text-18 text-white tracking-snugger rounded-full border border-white/20 transition-all duration-200 hover:border-white/50 mt-auto font-semibold capitalize transition-all duration-500 hover:bg-opacity-85 sm:!h-10 sm:!text-16 bg-white !text-black"
+                                href="/login">Start Free</a>
+                            <div class="pointer-events-none select-none rounded-[inherit]">
+                                <div class="absolute -left-[70%] -top-[300px] -z-20 aspect-[0.925925] w-[1000px] rounded-[inherit] md:-top-[282px] md:w-[932px] sm:-left-[68.666%] sm:-top-[56%] sm:w-[255%] transition-opacity duration-300" data-video-container>
+                                    <div class="absolute -inset-0">
+                                        <video class="absolute inset-0" width="1000" height="1080" autoplay="" loop="" playsinline="" style="opacity: 1;">
+                                            <source src="ppricing_blue.mp4" type="video/mp4">
+                                            <source src="/videos/pages/pricing/plans/rare.webm" type="video/webm">
+                                        </video>
+                                    </div>
+                                    <img alt="" loading="lazy" width="500" height="540" decoding="async" data-nimg="1" class="absolute left-0 top-0 z-10 aspect-[0.925925] w-[1000px] max-w-none rounded-[inherit] md:w-[932px] xs:w-[692px]" style="color:transparent" srcset="/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fvideo-fade.8c7d3d5c.png&w=640&q=100 1x, /_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fvideo-fade.8c7d3d5c.png&w=1080&q=100 2x" src="/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fvideo-fade.8c7d3d5c.png&w=1080&q=100">
+                                </div>
+                            </div>
+                            <div class="pointer-events-none absolute -inset-px -z-10 select-none rounded-[inherit] opacity-0 [backdrop-filter:blur(1px)] sm:rounded-[18px]" style="opacity: 0;">
+                                <img alt="" loading="lazy" width="391" height="530" decoding="async" data-nimg="1" style="color:transparent" src="pricing_blue.svg">
+                            </div>
+                        </div>
+                        <div
+                            class="item relative mr-14 flex aspect-[0.7372] w-[390px] flex-shrink-0 cursor-pointer snap-center flex-col rounded-[24px] border border-[rgba(255,255,255,0.05)] p-[28px] pb-[25px] text-white transition-all duration-200 lg:mr-12 md:w-[366px] sm:mr-5 sm:w-[91%] sm:max-w-[366px] sm:p-[18px] xs:w-[288px] bg-[rgb(13_15_17/40%)] shadow-[4px_6px_25px_rgba(0,0,0,0.56)]"
+                            onclick="toggleActive(this)">
+                            <h3 class="text-20 font-semibold leading-snug tracking-tight sm:text-16">Epic</h3>
+                            <p class="mt-2.5 leading-snug">
+                                <span
+                                    class="text-64 font-semibold tracking-tight lg:text-56 md:text-48 sm:text-36">$<!-- -->99</span>
+                                <span
+                                    class="ml-1 text-20 font-medium tracking-tight text-grey-80 sm:text-16">.<!-- -->99</span>
+                                <span
+                                    class="ml-1 text-20 font-medium tracking-tight text-grey-80 sm:text-16">/monthly</span>
+                            </p>
+                            <p class="mt-1 pr-3 text-18 leading-snug -tracking-[0.03em] md:mt-0 sm:pr-0 sm:text-16">For
+                                professional creative companies and small businesses.</p>
+                            <span class="mt-[18px] block h-px bg-[rgba(255,255,255,0.10)] sm:mt-4"
+                                aria-hidden="true"></span>
+                            <ul class="mt-6 flex flex-col gap-y-4 lg:mt-8 md:mt-7 sm:mt-4 sm:gap-y-3">
+                                <li
+                                    class="flex items-center gap-x-2 text-18 leading-none tracking-snugger text-white/90 sm:gap-x-1.5 sm:whitespace-nowrap sm:text-16 sm:tracking-tight">
+                                    <img alt="" loading="lazy" width="16" height="16" decoding="async" data-nimg="1"
+                                        class="" style="color:transparent"
+                                        src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGZpbGw9Im5vbmUiIHZpZXdCb3g9IjAgMCAxNiAxNiI+PHBhdGggc3Ryb2tlPSIjZmZmIiBzdHJoi2tlLWxpbmVjYXA9InJvdW5kIiBzdHJoi2tlLWxpbmVqb2luPSJyZWFyb2VuZCIgc3Ryb2tlLXdpZHRoPSIxLjgyOSIgZD0ibTEzLjMzIDQtNy4zMzMgNy4zMzNMMi6NjY0IDgiLzwvc3ZnPg==">
+                                    Unlimited users
+                                </li>
+                                <li
+                                    class="flex items-center gap-x-2 text-18 leading-none tracking-snugger text-white/90 sm:gap-x-1.5 sm:whitespace-nowrap sm:text-16 sm:tracking-tight">
+                                    <img alt="" loading="lazy" width="16" height="16" decoding="async" data-nimg="1"
+                                        class="" style="color:transparent"
+                                        src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGZpbGw9Im5vbmUiIHZpZXdCb3g9IjAgMCAxNiAxNiI+PHBhdGggc3Ryb2tlPSIjZmZmIiBzdHJoi2tlLWxpbmVjYXA9InJvdW5kIiBzdHJoi2tlLWxpbmVqb2luPSJyZWFyb2VuZCIgc3Ryb2tlLXdpZHRoPSIxLjgyOSIgZD0ibTEzLjMzIDQtNy4zMzMgNy4zMzNMMi6NjY0IDgiLzwvc3ZnPg==">
+                                    Unlimited Huly Objects
+                                </li>
+                                <li
+                                    class="flex items-center gap-x-2 text-18 leading-none tracking-snugger text-white/90 sm:gap-x-1.5 sm:whitespace-nowrap sm:text-16 sm:tracking-tight">
+                                    <img alt="" loading="lazy" width="16" height="16" decoding="async" data-nimg="1"
+                                        class="" style="color:transparent"
+                                        src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGZpbGw9Im5vbmUiIHZpZXdCb3g9IjAgMCAxNiAxNiI+PHBhdGggc3Ryb2tlPSIjZmZmIiBzdHJoi2tlLWxpbmVjYXA9InJvdW5kIiBzdHJoi2tlLWxpbmVqb2luPSJyZWFyb2VuZCIgc3Ryb2tlLXdpZHRoPSIxLjgyOSIgZD0ibTEzLjMzIDQtNy4zMzMgNy4zMzNMMi6NjY0IDgiLzwvc3ZnPg==">
+                                    1TB Storage
+                                    <span class="ml-1 whitespace-nowrap">
+                                        <span class="group relative top-0.5 inline-block"
+                                            data-tooltip-id="1TB Storage_tooltip_2" aria-hidden="true">
+                                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 16 16"
+                                                class="text-grey-80 transition-opacity duration-200 group-hover:text-white"
+                                                width="16" height="16" aria-hidden="true">
+                                                <path fill="currentColor"
+                                                    d="M8.002 16.004A8.002 8.002 0 1 0 8.002 0a8.002 8.002 0 0 0 0 16.004"
+                                                    opacity="0.11"></path>
+                                                <path fill="#C9CBCF"
+                                                    d="M8.004 4.92c.576 0 .82-.308.82-.73v-.218c0-.423-.244-.73-.82-.73s-.832.307-.832.73v.218c0 .422.256.73.832.73M7.3 12.767h1.395V6.11H7.3v6.658Z">
+                                                </path>
+                                            </svg>
+                                        </span>
+                                    </span>
+                                </li>
+                                <li
+                                    class="flex items-center gap-x-2 text-18 leading-none tracking-snugger text-white/90 sm:gap-x-1.5 sm:whitespace-nowrap sm:text-16 sm:tracking-tight">
+                                    <img alt="" loading="lazy" width="16" height="16" decoding="async" data-nimg="1"
+                                        class="" style="color:transparent"
+                                        src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGZpbGw9Im5vbmUiIHZpZXdCb3g9IjAgMCAxNiAxNiI+PHBhdGggc3Ryb2tlPSIjZmZmIiBzdHJoi2tlLWxpbmVjYXA9InJvdW5kIiBzdHJoi2tlLWxpbmVqb2luPSJyZWFyb2VuZCIgc3Ryb2tlLXdpZHRoPSIxLjgyOSIgZD0ibTEzLjMzIDQtNy4zMzMgNy4zMzNMMi6NjY4IDgiLzwvc3ZnPg==">
+                                    500GB Video / Audio Traffic
+                                    <span class="ml-1 whitespace-nowrap">
+                                        <span class="group relative top-0.5 inline-block"
+                                            data-tooltip-id="500GB Video / Audio Traffic_tooltip_2" aria-hidden="true">
+                                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 16 16"
+                                                class="text-grey-80 transition-opacity duration-200 group-hover:text-white"
+                                                width="16" height="16" aria-hidden="true">
+                                                <path fill="currentColor"
+                                                    d="M8.002 16.004A8.002 8.002 0 1 0 8.002 0a8.002 8.002 0 0 0 0 16.004"
+                                                    opacity="0.11"></path>
+                                                <path fill="#C9CBCF"
+                                                    d="M8.004 4.92c.576 0 .82-.308.82-.73v-.218c0-.423-.244-.73-.82-.73s-.832.307-.832.73v.218c0 .422.256.73.832.73M7.3 12.767h1.395V6.11H7.3v6.658Z">
+                                                </path>
+                                            </svg>
+                                        </span>
+                                    </span>
+                                </li>
+                                <li
+                                    class="flex items-center gap-x-2 text-18 leading-none tracking-snugger text-white/90 sm:gap-x-1.5 sm:whitespace-nowrap sm:text-16 sm:tracking-tight">
+                                    <img alt="" loading="lazy" width="16" height="16" decoding="async" data-nimg="1"
+                                        class="" style="color:transparent"
+                                        src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGZpbGw9Im5vbmUiIHZpZXdCb3g9IjAgMCAxNiAxNiI+PHBhdGggc3Ryb2tlPSIjZmZmIiBzdHJoi2tlLWxpbmVjYXA9InJvdW5kIiBzdHJoi2tlLWxpbmVqb2luPSJyZWFyb2VuZCIgc3Ryb2tlLXdpZHRoPSIxLjgyOSIgZD0ibTEzLjMzIDQtNy4zMzMgNy4zMzNMMi6NjY4IDgiLzwvc3ZnPg==">
+                                    AI — TBD
+                                </li>
+                            </ul>
+                            <a class="transition-colors duration-200 transition-all duration-200 uppercase font-bold flex items-center justify-center h-14 w-full text-18 text-white tracking-snugger rounded-full border border-white/20 transition-all duration-200 hover:border-white/50 mt-auto font-semibold capitalize transition-all duration-500 hover:bg-opacity-85 sm:!h-10 sm:!text-16 bg-white !text-black"
+                                href="/login">Start Free</a>
+                            <div class="pointer-events-none select-none rounded-[inherit]">
+                                <div class="absolute -left-[70%] -top-[300px] -z-20 aspect-[0.925925] w-[1000px] rounded-[inherit] md:-top-[282px] md:w-[932px] sm:-left-[68.666%] sm:-top-[56%] sm:w-[255%] transition-opacity duration-300" data-video-container>
+                                    <div class="absolute -inset-0">
+                                        <video class="absolute inset-0" width="1000" height="1080" autoplay="" loop="" playsinline="" style="opacity: 1;">
+                                            <source src="pricing_purple.mp4" type="video/mp4">
+                                            <source src="/videos/pages/pricing/plans/epic.webm" type="video/webm">
+                                        </video>
+                                    </div>
+                                    <img alt="" loading="lazy" width="500" height="540" decoding="async" data-nimg="1" class="absolute left-0 top-0 z-10 aspect-[0.925925] w-[1000px] max-w-none rounded-[inherit] md:w-[932px] xs:w-[692px]" style="color:transparent" srcset="/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fvideo-fade.8c7d3d5c.png&w=640&q=100 1x, /_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fvideo-fade.8c7d3d5c.png&w=1080&q=100 2x" src="/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fvideo-fade.8c7d3d5c.png&w=1080&q=100">
+                                </div>
+                            </div>
+                            <div class="pointer-events-none absolute -inset-px -z-10 select-none rounded-[inherit] opacity-0 [backdrop-filter:blur(1px)] sm:rounded-[18px]" style="opacity: 0;">
+                                <img alt="" loading="lazy" width="391" height="530" decoding="async" data-nimg="1" style="color:transparent" src="pricing_purple.svg">
+                            </div>
+                        </div>
+                        <div
+                            class="item relative mr-14 flex aspect-[0.7372] w-[390px] flex-shrink-0 cursor-pointer snap-center flex-col rounded-[24px] border border-[rgba(255,255,255,0.05)] p-[28px] pb-[25px] text-white transition-all duration-200 lg:mr-12 md:w-[366px] sm:mr-5 sm:w-[91%] sm:max-w-[366px] sm:p-[18px] xs:w-[288px] bg-[rgb(13_15_17/40%)] shadow-[4px_6px_25px_rgba(0,0,0,0.56)]"
+                            onclick="toggleActive(this)">
+                            <h3 class="text-20 font-semibold leading-snug tracking-tight sm:text-16">Legendary</h3>
+                            <p class="mt-2.5 leading-snug">
+                                <span
+                                    class="text-64 font-semibold tracking-tight lg:text-56 md:text-48 sm:text-36">$<!-- -->399</span>
+                                <span
+                                    class="ml-1 text-20 font-medium tracking-tight text-grey-80 sm:text-16">.<!-- -->99</span>
+                                <span
+                                    class="ml-1 text-20 font-medium tracking-tight text-grey-80 sm:text-16">/monthly</span>
+                            </p>
+                            <p class="mt-1 pr-3 text-18 leading-snug -tracking-[0.03em] md:mt-0 sm:pr-0 sm:text-16">Best
+                                for large multiple teams that need maximum capabilities.</p>
+                            <span class="mt-[18px] block h-px bg-[rgba(255,255,255,0.10)] sm:mt-4"
+                                aria-hidden="true"></span>
+                            <ul class="mt-6 flex flex-col gap-y-4 lg:mt-8 md:mt-7 sm:mt-4 sm:gap-y-3">
+                                <li
+                                    class="flex items-center gap-x-2 text-18 leading-none tracking-snugger text-white/90 sm:gap-x-1.5 sm:whitespace-nowrap sm:text-16 sm:tracking-tight">
+                                    <img alt="" loading="lazy" width="16" height="16" decoding="async" data-nimg="1"
+                                        class="" style="color:transparent"
+                                        src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGZpbGw9Im5vbmUiIHZpZXdCb3g9IjAgMCAxNiAxNiI+PHBhdGggc3Ryb2tlPSIjZmZmIiBzdHJoi2tlLWxpbmVjYXA9InJvdW5kIiBzdHJoi2tlLWxpbmVqb2luPSJyZWFyb2VuZCIgc3Ryb2tlLXdpZHRoPSIxLjgyOSIgZD0ibTEzLjMzIDQtNy4zMzMgNy4zMzNMMi6NjY0IDgiLzwvc3ZnPg==">
+                                    Unlimited users
+                                </li>
+                                <li
+                                    class="flex items-center gap-x-2 text-18 leading-none tracking-snugger text-white/90 sm:gap-x-1.5 sm:whitespace-nowrap sm:text-16 sm:tracking-tight">
+                                    <img alt="" loading="lazy" width="16" height="16" decoding="async" data-nimg="1"
+                                        class="" style="color:transparent"
+                                        src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGZpbGw9Im5vbmUiIHZpZXdCb3g9IjAgMCAxNiAxNiI+PHBhdGggc3Ryb2tlPSIjZmZmIiBzdHJoi2tlLWxpbmVjYXA9InJvdW5kIiBzdHJoi2tlLWxpbmVqb2luPSJyZWFyb2VuZCIgc3Ryb2tlLXdpZHRoPSIxLjgyOSIgZD0ibTEzLjMzIDQtNy4zMzMgNy4zMzNMMi6NjY4IDgiLzwvc3ZnPg==">
+                                    Unlimited Huly Objects
+                                </li>
+                                <li
+                                    class="flex items-center gap-x-2 text-18 leading-none tracking-snugger text-white/90 sm:gap-x-1.5 sm:whitespace-nowrap sm:text-16 sm:tracking-tight">
+                                    <img alt="" loading="lazy" width="16" height="16" decoding="async" data-nimg="1"
+                                        class="" style="color:transparent"
+                                        src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGZpbGw9Im5vbmUiIHZpZXdCb3g9IjAgMCAxNiAxNiI+PHBhdGggc3Ryb2tlPSIjZmZmIiBzdHJoi2tlLWxpbmVjYXA9InJvdW5kIiBzdHJoi2tlLWxpbmVqb2luPSJyZWFyb2VuZCIgc3Ryb2tlLXdpZHRoPSIxLjgyOSIgZD0ibTEzLjMzIDQtNy4zMzMgNy4zMzNMMi6NjY4IDgiLzwvc3ZnPg==">
+                                    10TB Storage
+                                    <span class="ml-1 whitespace-nowrap">
+                                        <span class="group relative top-0.5 inline-block"
+                                            data-tooltip-id="10TB Storage_tooltip_3" aria-hidden="true">
+                                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 16 16"
+                                                class="text-grey-80 transition-opacity duration-200 group-hover:text-white"
+                                                width="16" height="16" aria-hidden="true">
+                                                <path fill="currentColor"
+                                                    d="M8.002 16.004A8.002 8.002 0 1 0 8.002 0a8.002 8.002 0 0 0 0 16.004"
+                                                    opacity="0.11"></path>
+                                                <path fill="#C9CBCF"
+                                                    d="M8.004 4.92c.576 0 .82-.308.82-.73v-.218c0-.423-.244-.73-.82-.73s-.832.307-.832.73v.218c0 .422.256.73.832.73M7.3 12.767h1.395V6.11H7.3v6.658Z">
+                                                </path>
+                                            </svg>
+                                        </span>
+                                    </span>
+                                </li>
+                                <li
+                                    class="flex items-center gap-x-2 text-18 leading-none tracking-snugger text-white/90 sm:gap-x-1.5 sm:whitespace-nowrap sm:text-16 sm:tracking-tight">
+                                    <img alt="" loading="lazy" width="16" height="16" decoding="async" data-nimg="1"
+                                        class="" style="color:transparent"
+                                        src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGZpbGw9Im5vbmUiIHZpZXdCb3g9IjAgMCAxNiAxNiI+PHBhdGggc3Ryb2tlPSIjZmZmIiBzdHJoi2tlLWxpbmVjYXA9InJvdW5kIiBzdHJoi2tlLWxpbmVqb2luPSJyZWFyb2VuZCIgc3Ryb2tlLXdpZHRoPSIxLjgyOSIgZD0ibTEzLjMzIDQtNy4zMzMgNy4zMzNMMi6NjY4IDgiLzwvc3ZnPg==">
+                                    2TB Video / Audio Traffic
+                                    <span class="ml-1 whitespace-nowrap">
+                                        <span class="group relative top-0.5 inline-block"
+                                            data-tooltip-id="2TB Video / Audio Traffic_tooltip_3" aria-hidden="true">
+                                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 16 16"
+                                                class="text-grey-80 transition-opacity duration-200 group-hover:text-white"
+                                                width="16" height="16" aria-hidden="true">
+                                                <path fill="currentColor"
+                                                    d="M8.002 16.004A8.002 8.002 0 1 0 8.002 0a8.002 8.002 0 0 0 0 16.004"
+                                                    opacity="0.11"></path>
+                                                <path fill="#C9CBCF"
+                                                    d="M8.004 4.92c.576 0 .82-.308.82-.73v-.218c0-.423-.244-.73-.82-.73s-.832.307-.832.73v.218c0 .422.256.73.832.73M7.3 12.767h1.395V6.11H7.3v6.658Z">
+                                                </path>
+                                            </svg>
+                                        </span>
+                                    </span>
+                                </li>
+                                <li
+                                    class="flex items-center gap-x-2 text-18 leading-none tracking-snugger text-white/90 sm:gap-x-1.5 sm:whitespace-nowrap sm:text-16 sm:tracking-tight">
+                                    <img alt="" loading="lazy" width="16" height="16" decoding="async" data-nimg="1"
+                                        class="" style="color:transparent"
+                                        src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGZpbGw9Im5vbmUiIHZpZXdCb3g9IjAgMCAxNiAxNiI+PHBhdGggc3Ryb2tlPSIjZmZmIiBzdHJoi2tlLWxpbmVjYXA9InJvdW5kIiBzdHJoi2tlLWxpbmVqb2luPSJyZWFyb2VuZCIgc3Ryb2tlLXdpZHRoPSIxLjgyOSIgZD0ibTEzLjMzIDQtNy4zMzMgNy4zMzNMMi6NjY4IDgiLzwvc3ZnPg==">
+                                    AI — TBD
+                                </li>
+                            </ul>
+                            <a class="transition-colors duration-200 transition-all duration-200 uppercase font-bold flex items-center justify-center h-14 w-full text-18 text-white tracking-snugger rounded-full border border-white/20 transition-all duration-200 hover:border-white/50 mt-auto font-semibold capitalize transition-all duration-500 hover:bg-opacity-85 sm:!h-10 sm:!text-16 bg-white !text-black"
+                                href="/login">Start Free</a>
+                            <div class="pointer-events-none select-none rounded-[inherit]">
+                                <div class="absolute -left-[70%] -top-[300px] -z-20 aspect-[0.925925] w-[1000px] rounded-[inherit] md:-top-[282px] md:w-[932px] sm:-left-[68.666%] sm:-top-[56%] sm:w-[255%] transition-opacity duration-300" data-video-container>
+                                    <div class="absolute -inset-0">
+                                        <video class="absolute inset-0" width="1000" height="1080" autoplay="" loop="" playsinline="" style="opacity: 1;">
+                                            <source src="pricing_orange.mp4" type="video/mp4">
+                                            <source src="/videos/pages/pricing/plans/legendary.webm" type="video/webm">
+                                        </video>
+                                    </div>
+                                    <img alt="" loading="lazy" width="500" height="540" decoding="async" data-nimg="1" class="absolute left-0 top-0 z-10 aspect-[0.925925] w-[1000px] max-w-none rounded-[inherit] md:w-[932px] xs:w-[692px]" style="color:transparent" srcset="/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fvideo-fade.8c7d3d5c.png&w=640&q=100 1x, /_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fvideo-fade.8c7d3d5c.png&w=1080&q=100 2x" src="/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fvideo-fade.8c7d3d5c.png&w=1080&q=100">
+                                </div>
+                            </div>
+                            <div class="pointer-events-none absolute -inset-px -z-10 select-none rounded-[inherit] opacity-0 [backdrop-filter:blur(1px)] sm:rounded-[18px]" style="opacity: 0;">
+                                <img alt="" loading="lazy" width="391" height="530" decoding="async" data-nimg="1" style="color:transparent" src="pricing_orange.svg">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function toggleActive(selectedItem) {
+            // Remove active class from all items
+            document.querySelectorAll('.item').forEach(item => {
+                item.classList.remove('active');
+            });
+            // Add active class to the clicked item
+            selectedItem.classList.add('active');
+        }
+
+        // Set the first item as active by default
+        document.querySelector('.item').classList.add('active');
+    </script>
+</body>
+
+</html>
